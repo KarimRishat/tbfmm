@@ -4,6 +4,9 @@
 #include <array>
 #include <random>
 
+/// @brief Generator of random particle positions within a box. Ctor initialises the generator, and the object generates a new random element, i.e., an array of coordinates
+/// @tparam RealType_T Simulation precisio, presumabely float or double
+/// @tparam NbValuesPerItem_T Number of coordinates, i.e., problem spacial dimension, 1,2, or 3
 template <class RealType_T, long int NbValuesPerItem_T>
 class TbfRandom{
 public:

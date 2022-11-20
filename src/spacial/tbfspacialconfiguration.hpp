@@ -3,6 +3,11 @@
 
 #include <array>
 
+/// @brief Descriptor of the spacial configuration of the problem domain.
+///
+/// Contains box width, box center and box corner as fields
+/// @tparam RealType_T Sets the computation precision, typically double, or float
+/// @tparam Dim_T Problem dimension, typically 1, 2, or 3
 template <class RealType_T, long int Dim_T>
 class TbfSpacialConfiguration {
 public:
